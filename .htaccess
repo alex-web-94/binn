@@ -1,0 +1,6 @@
+
+Options -Indexes
+
+RewriteEngine on
+RewriteRule ^(.*)$ frontend/web/$1 [L]
+
