@@ -69,7 +69,7 @@ class Car extends ActiveRecord
     {
         // Необходимо написать правила валидации
         return [
-            ['date', 'string', 'max' => 255],
+            ['date', 'datetime', 'format' => 'php:d.m.Y'],
             ['date', 'filter', 'filter' => function ($value) {
                 return strtotime($value);
             }],
